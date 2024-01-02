@@ -8,6 +8,7 @@ Clean Architecture which is also known as Domain-Driven Design has evolved with 
 * Domain-Driven Design (DDD) or Domain Centric Architecture
 * vertical Slice Architecture
 * Clean Architecture
+
 The above mentioned architectures have similar design principles that have the primary idea to keep the core business logic and application domain at the center of the solution structure. In this architecture, we make core application business logic and domain or entities independent of the presentation layer and data access layer.
 
 Therefore, the whole idea of this architecture is to allow the core part, which consists of complete business logic and application entities, adaptive and flexible enough to deal with changing technology and interfaces. Additionally, the core application remains the same and independent of presentation layers, infrastructures, and databases.
