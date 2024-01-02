@@ -28,3 +28,7 @@ The business rules should be independent of external parties or agencies.
 The core business or application rules should be independent of the existence of frameworks, libraries for the future. We can include the frameworks but as tools, and the solution should not be completely relied on those.
 ### 5. Testable
 The architecture should comply with the testing of the core application and business cases and rules without the UI, database, Web server, or any external component.
+
+## Clean Architecture Diagram
+
+![alt text](https://www.c-sharpcorner.com/article/what-is-clean-architecture/Images/What%20is%20Clean%20Architecture1.png "Clean Architecture Diagram")
