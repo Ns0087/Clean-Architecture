@@ -56,3 +56,29 @@ This layer acts as a communicator to convert data into desired format for storin
 
 ### External Interfaces, (Frameworks and Drivers)
 This is the outermost layer in this clean architecture which changes frequently based on the technologies, updates like database, Web Front-end frameworks. In this layer, we **present the data to the UI** or database.
+
+## Solution Designing
+
+We can design the solution in various ways based on the requirements or personal adjustments, however, the core principles must be kept intact and implemented correctly.
+
+Sample Structure looks like as shown below:
+![alt text](https://www.c-sharpcorner.com/article/what-is-clean-architecture/Images/image-2.png "Solution Design")
+
+**Domain Class Library** – No dependencies, no project or class reference, no logic
+
+**Application Class Library** – Only Domain is added as reference project, Pure business logic or services.
+
+Domain and Application are the core of this solution which are independent of Infrastructure, WebUI, and external libraries.
+
+**Infrastructure Class Library** – Application Class is added as reference. This class is responsible for external infrastructure communications like database storage, file system, external systems/APIs/Services and so on.
+
+We can add more class libraries under this folder for external plugins or SDK to organize the solution in a better way.
+
+**Web UI** – This is a presentation web UI project. This can be an MVC, front-end framework. If we are designing an API based solution, then we can keep both Web API and Front-end in this folder host. We add Application and Infrastructure as reference in this project.
+
+This is a way of organizing and designing a clean architecture solution. This is one way of structuring the solution following the clean architecture principles. However, we can do the organization in several ways, keeping the core values intact.
+
+In this illustration above, we have kept core applications independent and other infrastructure and web UI are dependent on core applications.
+
+## Conclusion
+​In this write-up, I have described the clean architecture in-depth with core values. The primary idea behind this clean architecture is to design in such a way that it should be adaptive and flexible enough to handle the changing technologies, external components, and web frontend frameworks. To achieve so, clean architecture provides organizing principles where we keep the core entities and business logic independent of presentation layers, infrastructures, databases, and external agents. Furthermore, I have illustrated an architectural diagram of clean architecture and have delved into it with the core principles. Additionally, I have explained the layers of clean architecture and finally shared the solution design diagram with an example. The above article will give you holistic concepts of clean architecture.
